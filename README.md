@@ -16,9 +16,11 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 
 ### Phase 1: Foundational Work
 
+See [Phase 1 README](./phase1/README.md)
+
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
     -   [ ] **Environment Setup**:
-        -   [ ] Set up `b2txt25` (conda or python) environment for model training.
+        -   [ x ] Set up `b2txt25` (conda or python) environment for model training.
         -   [ ] Set up `b2txt25_lm` (conda or python) environment for the language model.
         -   [ ] Install all necessary dependencies, including Redis, CMake, and gcc.
     -   [ ] **Data Preparation**:
