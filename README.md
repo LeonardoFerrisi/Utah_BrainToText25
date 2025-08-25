@@ -10,7 +10,6 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 
 - [ ] Replicate results from Baseline
 - [ ] Implementation of Winning 2024 algorithm
-- 
 
 
 ## Roadmap
