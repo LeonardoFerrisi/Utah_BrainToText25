@@ -12,22 +12,22 @@ fi
 # Update package list and install prerequisites
 apt update && apt install -y software-properties-common
 
-# Add deadsnakes PPA for Python 3.10
+# Add deadsnakes PPA for Python 3.11
 # Allows us to install Python 3.10 on Ubuntu versions that do not have it in their default repositories
 add-apt-repository -y ppa:deadsnakes/ppa
 apt update
 
-# Install Python 3.10
-apt install -y python3.10 python3.10-venv python3.10-dev python3-pip
+# Install Python 3.11
+apt install -y python3.11 python3.11-venv python3.11-dev python3-pip
 
 # Verify Python installation
 python3.10 --version
 
 # Create a virtual environment
-python3.10 -m venv .b2txt2025
+python3.10 -m venv .b2txt2025_linux
 
 # Activate the virtual environment
-source .b2txt2025/bin/activate
+source .b2txt2025_linux/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip
@@ -39,4 +39,4 @@ pip install -r requirements.txt
 deactivate
 
 # Print completion message
-echo "Setup complete. Python 3.10 and dependencies have been installed."
+echo "Setup complete. Python 3.11 and dependencies have been installed."
