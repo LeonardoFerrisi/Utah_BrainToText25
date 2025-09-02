@@ -5,12 +5,11 @@ We propose ALAN-D, *A Language Algorithm for Neural Decoding*.
 
 ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UCD.
 
+## Required Software
 
-## Roadmap
-
-- [ ] Replicate results from Baseline
-- [ ] Implementation of Winning 2024 algorithm
-
+- Docker [https://www.docker.com/products/docker-desktop/]()
+- VSCode [https://code.visualstudio.com/]()
+- Git [https://git-scm.com/downloads]()
 
 ## Roadmap
 
@@ -20,7 +19,7 @@ See [Phase 1 README](./phase1/README.md)
 
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
     -   [ ] **Environment Setup**:
-        -   [ x ] Set up `b2txt25` (conda or python) environment for model training.
+        -   [x] Set up `b2txt25` (conda or python) environment for model training.
         -   [ ] Set up `b2txt25_lm` (conda or python) environment for the language model.
         -   [ ] Install all necessary dependencies, including Redis, CMake, and gcc.
     -   [ ] **Data Preparation**:

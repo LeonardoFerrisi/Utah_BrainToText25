@@ -21,10 +21,10 @@ apt update
 apt install -y python3.10 python3.10-venv python3.10-dev python3-pip
 
 # Verify Python installation
-python3.10 --version
+python --version
 
 # Create a virtual environment
-python3.10 -m venv .b2txt2025
+python -m venv .b2txt2025
 
 # Activate the virtual environment
 source .b2txt2025/bin/activate
