@@ -1,2 +1,4 @@
 [safe]
-    directory = *
+    directory = /workspaces/Utah_BrainToText25/
+    directory = /workspaces/Utah_BrainToText25/phase1/
+    directory = /workspaces/Utah_BrainToText25/phase1/nejm-brain-to-text/
