@@ -1,0 +1,623 @@
+[42 ms] Dev Containers 0.422.1 in VS Code 1.103.2 (6f17636121051a53c88d3e605c491d22af2ba755).
+[41 ms] Start: Resolving Remote
+[69 ms] Setting up container for folder or workspace: c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25
+[69 ms] Context: desktop-linux
+[105 ms] Start: Run: wsl -l -v
+[185 ms] Start: Run: wsl -d Ubuntu -e /bin/sh -c echo ~
+[391 ms] Start: Run: wsl -d Ubuntu -e /bin/sh -c cd '/home/default' && /bin/sh
+[395 ms] Start: Run in host: id -un
+[461 ms] default
+[462 ms] 
+[462 ms] Start: Run in host:  (command -v getent >/dev/null 2>&1 && getent passwd 'default' || grep -E '^default|^[^:]*:[^:]*:default:' /etc/passwd || true)
+[465 ms] Start: Run in host: echo ~
+[467 ms] /home/default
+[467 ms] 
+[468 ms] Start: Run in host: test -f '/home/default/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'
+[469 ms] 
+[469 ms] 
+[469 ms] Exit code 1
+[469 ms] Start: Run in host: test -f '/home/default/.vscode/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'
+[471 ms] 
+[471 ms] 
+[471 ms] Exit code 1
+[471 ms] Start: Run in host: test -f '/home/default/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'
+[472 ms] 
+[472 ms] 
+[473 ms] Start: Run in host: test -f '/home/default/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node_modules/node-pty/package.json'
+[473 ms] 
+[474 ms] 
+[474 ms] Start: Run in host: test -f '/home/default/.vscode-remote-containers/dist/vscode-remote-containers-server-0.422.1.js'
+[475 ms] 
+[475 ms] 
+[477 ms] userEnvProbe: loginInteractiveShell (default)
+[477 ms] userEnvProbe: not found in cache
+[477 ms] userEnvProbe shell: /bin/bash
+[733 ms] userEnvProbe PATHs:
+Probe:     '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/MATLAB/MATLAB Runtime/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/electricui-arc/:/mnt/c/Program Files/Android/Android Studio/jbr/bin:/mnt/c/Program Files/MATLAB/MATLAB Runtime/R2024a/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Program Files/MATLAB/R2020b/runtime/win64:/mnt/c/Program Files/MATLAB/R2020b/bin:/mnt/c/Scripts:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python312:/mnt/c/Program Files/Tailscale/:/mnt/c/Scripts/cool-serial:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Leonardo/.ffmpeg/ffmpeg-8.0-essentials_build/bin:/mnt/c/Users/Leonardo/.ffmpeg/ffmpeg-8.0-essentials_build:/Docker/host/bin:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python313/Scripts/:/mnt/c/Users/Leonardo/AppData/Local/Programs/Python/Python313/:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Leonardo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Leonardo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Leonardo/AppData/Roaming/npm:/mnt/c/Users/Leonardo/AppData/Local/Pandoc/:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/Leonardo/.deno/bin:/mnt/c/Users/Leonardo/AppData/Local/Programs/Ollama:/mnt/c/Program Files/Android/Android Studio/jbr/bin:/mnt/c/Users/Leonardo/flutter/bin:/mnt/c/Users/Leonardo/.ffmpeg/ffmpeg-8.0-essentials_build:/mnt/c/Users/Leonardo/.ffmpeg/ffmpeg-8.0-essentials_build/bin:/mnt/c/Users/Leonardo/AppData/Local/Box/Box Edit/:/snap/bin'
+Container: None
+[746 ms] Start: Check Docker is running
+[746 ms] Start: Run: docker version
+[877 ms] Client:
+ Version:           28.3.3
+ API version:       1.51
+ Go version:        go1.24.5
+ Git commit:        980b856
+ Built:             Fri Jul 25 11:36:03 2025
+ OS/Arch:           windows/amd64
+ Context:           desktop-linux
+
+[877 ms] Server: Docker Desktop 4.45.0 (203075)
+ Engine:
+  Version:          28.3.3
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.5
+  Git commit:       bea959c
+  Built:            Fri Jul 25 11:34:00 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.7.27
+  GitCommit:        05044ec0a9a75232cad458027ca83437aae3f4da
+ runc:
+  Version:          1.2.5
+  GitCommit:        v1.2.5-0-g59923ef
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[887 ms] Start: Run: docker volume ls -q
+[1004 ms] Start: Run: docker ps -q -a --filter label=vsch.local.folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --filter label=vsch.quality=stable
+[1107 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --filter label=devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json
+[1224 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25
+[1378 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25
+[1507 ms] Running Dev Containers CLI:   up --user-data-folder c:\Users\Leonardo\AppData\Roaming\Code\User\globalStorage\ms-vscode-remote.remote-containers\data --container-session-data-folder /tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 --workspace-folder c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --log-level debug --log-format json --config c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[1516 ms] ProxyResolver#loadSystemCertificates count
+[1519 ms] ProxyResolver#loadSystemCertificates count filtered
+[1520 ms] Start: Run: C:\Users\Leonardo\AppData\Local\Programs\Microsoft VS Code\Code.exe c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js up --user-data-folder c:\Users\Leonardo\AppData\Roaming\Code\User\globalStorage\ms-vscode-remote.remote-containers\data --container-session-data-folder /tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 --workspace-folder c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --workspace-mount-consistency cached --gpu-availability detect --id-label devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --log-level debug --log-format json --config c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root --include-configuration --include-merged-configuration
+[1734 ms] @devcontainers/cli 0.79.0. Node.js v22.17.0. win32 10.0.19045 x64.
+[1734 ms] Start: Run: docker buildx version
+[1945 ms] github.com/docker/buildx v0.27.0-desktop.1 0ea7d3a2239bb57d1c598c691c5d00101ca936b7
+[1945 ms] 
+[1945 ms] Start: Run: docker -v
+[2041 ms] Start: Resolving Remote
+[2045 ms] Start: Run: git rev-parse --show-cdup
+[2107 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --filter label=devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json
+[2218 ms] Start: Run: docker inspect --type image python:3.12-bullseye
+[2414 ms] Resolving Feature dependencies for 'ghcr.io/devcontainers/features/git-lfs:1'...
+[2414 ms] * Processing feature: ghcr.io/devcontainers/features/git-lfs:1
+[2416 ms] Loading 40 extra certificates from C:\Users\Leonardo\AppData\Local\Temp\vsch\certificates-fa10956b2f075abbee95fc9f522d972cc5ce48d8b3c1277975a90f732e5a4dc1.pem.
+[2625 ms] Start: Run: docker-credential-desktop get
+[3185 ms] * Processing feature: ghcr.io/devcontainers/features/common-utils
+[3383 ms] Resolving Feature dependencies for 'ghcr.io/devcontainers/features/github-cli:1'...
+[3383 ms] * Processing feature: ghcr.io/devcontainers/features/github-cli:1
+[3607 ms] * Processing feature: ghcr.io/devcontainers/features/common-utils
+[3818 ms] * Processing feature: ghcr.io/devcontainers/features/git
+[4044 ms] Resolving Feature dependencies for 'ghcr.io/wxw-matt/devcontainer-features/command_runner:0'...
+[4044 ms] * Processing feature: ghcr.io/wxw-matt/devcontainer-features/command_runner:0
+[5180 ms] Files to omit: ''
+[5222 ms] Resolving Feature dependencies for 'ghcr.io/wxw-matt/devcontainer-features/script_runner:0'...
+[5222 ms] * Processing feature: ghcr.io/wxw-matt/devcontainer-features/script_runner:0
+[5815 ms] Files to omit: ''
+[5874 ms] Soft-dependency 'ghcr.io/devcontainers/features/common-utils' is not required.  Removing from installation order...
+[5874 ms] Soft-dependency 'ghcr.io/devcontainers/features/git' is not required.  Removing from installation order...
+[5874 ms] Soft-dependency 'ghcr.io/devcontainers/features/common-utils' is not required.  Removing from installation order...
+[5875 ms] * Fetching feature: git-lfs_0_oci
+[6146 ms] Files to omit: ''
+[6193 ms] * Fetched feature: git-lfs_0_oci version 1.2.5
+[6193 ms] * Fetching feature: github-cli_1_oci
+[6908 ms] Files to omit: ''
+[6959 ms] * Fetched feature: github-cli_1_oci version 1.0.14
+[6959 ms] * Fetching feature: command_runner_2_oci
+[7806 ms] Files to omit: ''
+[7835 ms] * Fetched feature: command_runner_2_oci version 0.5.0
+[7835 ms] * Fetching feature: script_runner_3_oci
+[8788 ms] Files to omit: ''
+[8827 ms] * Fetched feature: script_runner_3_oci version 0.5.0
+[8849 ms] Start: Run: docker buildx build --load --build-arg BUILDKIT_INLINE_CACHE=1 -f C:\Users\Leonardo\AppData\Local\Temp\devcontainercli\container-features\0.79.0-1757093852634\Dockerfile-with-features -t vsc-utah_braintotext25-96c171effad6153f7256bd0ab8df7d2f14973baf34ac28596fe8b192b8a3fcdf --target dev_containers_target_stage --build-context dev_containers_feature_content_source=C:\Users\Leonardo\AppData\Local\Temp\devcontainercli\container-features\0.79.0-1757093852634 --build-arg _DEV_CONTAINERS_BASE_IMAGE=dev_container_auto_added_stage_label --build-arg _DEV_CONTAINERS_IMAGE_USER=vscode --build-arg _DEV_CONTAINERS_FEATURE_CONTENT_SOURCE=dev_container_feature_content_temp c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25
+
+[+] Building 30.9s (25/25) FINISHED                        docker:desktop-linux
+ => [internal] load build definition from Dockerfile-with-features         0.0s
+ => => transferring dockerfile: 4.99kB                                     0.0s
+ => resolve image config for docker-image://docker.io/docker/dockerfile:1  0.6s
+ => CACHED docker-image://docker.io/docker/dockerfile:1.4@sha256:9ba7531b  0.1s
+ => => resolve docker.io/docker/dockerfile:1.4@sha256:9ba7531bd80fb0a8586  0.1s
+ => [internal] load .dockerignore                                          0.1s
+ => => transferring context: 2B                                            0.0s
+ => [internal] load metadata for docker.io/library/python:3.12-bullseye    0.0s
+ => [context dev_containers_feature_content_source] load .dockerignore     0.0s
+ => => transferring dev_containers_feature_content_source: 2B              0.0s
+ => [dev_container_auto_added_stage_label 1/7] FROM docker.io/library/pyt  0.2s
+ => => resolve docker.io/library/python:3.12-bullseye@sha256:7cc929040c5e  0.0s
+ => [context dev_containers_feature_content_source] load from client       0.1s
+ => => transferring dev_containers_feature_content_source: 53.84kB         0.0s
+ => [internal] load build context                                          3.9s
+ => => transferring context: 140.15MB                                      3.9s
+ => [dev_container_auto_added_stage_label 2/7] WORKDIR /workspace          0.0s
+ => [dev_container_auto_added_stage_label 3/7] RUN apt-get update && apt-  5.4s
+ => [dev_container_auto_added_stage_label 4/7] RUN git lfs install         0.5s
+ => [dev_container_auto_added_stage_label 5/7] COPY . /workspace/          0.3s
+ => [dev_container_auto_added_stage_label 6/7] RUN useradd -m -s /bin/bas  0.7s
+ => [dev_container_auto_added_stage_label 7/7] WORKDIR /workspace/phase1   0.0s
+ => [dev_containers_target_stage 1/7] RUN mkdir -p /tmp/dev-container-fea  0.4s
+ => [dev_containers_feature_content_normalize 1/2] COPY --from=dev_contai  0.0s
+ => [dev_containers_feature_content_normalize 2/2] RUN chmod -R 0755 /tmp  0.9s
+ => [dev_containers_target_stage 2/7] COPY --from=dev_containers_feature_  0.0s
+ => [dev_containers_target_stage 3/7] RUN echo "_CONTAINER_USER_HOME=$( (  0.6s
+ => [dev_containers_target_stage 4/7] RUN --mount=type=bind,from=dev_cont  8.4s
+ => [dev_containers_target_stage 5/7] RUN --mount=type=bind,from=dev_cont  3.2s
+ => [dev_containers_target_stage 6/7] RUN --mount=type=bind,from=dev_cont  0.4s
+ => [dev_containers_target_stage 7/7] RUN --mount=type=bind,from=dev_cont  0.5s
+ => exporting to image                                                     8.3s
+ => => exporting layers                                                    5.5s
+ => => preparing layers for inline cache                                   0.8s
+ => => exporting manifest sha256:cda49981f60e4946fd5df7e593aa9d72d9dd9d25  0.0s
+ => => exporting config sha256:f1e9e174ed928a8088b2b077bf720129449983083f  0.0s
+ => => exporting attestation manifest sha256:5a7de235e5ab8ac3bcbbbdc847bf  0.0s
+ => => exporting manifest list sha256:e538d866ce5582e8b1270fba09db4258fe4  0.0s
+ => => naming to docker.io/library/vsc-utah_braintotext25-96c171effad6153  0.0s
+ => => unpacking to docker.io/library/vsc-utah_braintotext25-96c171effad6  1.8s
+[40496 ms] Start: Run: docker events --format {{json .}} --filter event=start
+[40542 ms] Start: Starting container
+[40542 ms] Start: Run: docker run --sig-proxy=false -a STDOUT -a STDERR --mount type=bind,source=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25,target=/workspaces/Utah_BrainToText25,consistency=cached --mount type=volume,src=vscode,dst=/vscode -l devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 -l devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --entrypoint /bin/sh vsc-utah_braintotext25-96c171effad6153f7256bd0ab8df7d2f14973baf34ac28596fe8b192b8a3fcdf -c echo Container started
+[41589 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --filter label=devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json
+Container started
+[41735 ms] Start: Run: docker inspect --type container c48f2d9785b6
+[41852 ms] Start: Inspecting container
+[41852 ms] Start: Run: docker inspect --type container c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3
+[41974 ms] Start: Run in container: /bin/sh
+[41995 ms] Start: Run in container: uname -m
+[42151 ms] x86_64
+[42151 ms] 
+[42151 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[42156 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[42156 ms] 
+[42157 ms] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'vscode' || grep -E '^vscode|^[^:]*:[^:]*:vscode:' /etc/passwd || true)
+[42162 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[42171 ms] 
+[42171 ms] 
+[42171 ms] Exit code 1
+[42171 ms] Start: Run in container: /bin/sh
+[42199 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcEnvironmentMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcEnvironmentMarker' ; } 2> /dev/null
+[42343 ms] 
+[42343 ms] 
+[42343 ms] Start: Run in container: cat >> /etc/environment <<'etcEnvironmentEOF'
+[42348 ms] 
+[42348 ms] 
+[42349 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[42352 ms] 
+[42352 ms] 
+[42352 ms] Exit code 1
+[42352 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcProfileMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcProfileMarker' ; } 2> /dev/null
+[42356 ms] 
+[42356 ms] 
+[42356 ms] Start: Run in container: sed -i -E 's/((^|\s)PATH=)([^\$]*)$/\1${PATH:-\3}/g' /etc/profile || true
+[42370 ms] 
+[42370 ms] 
+[42404 ms] Start: Run: docker inspect --type container c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3
+[42527 ms] Start: Run: docker exec -i -u root c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3 /bin/sh -c echo "New container started. Keep-alive process started." ; export VSCODE_REMOTE_CONTAINERS_SESSION=86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 ; /bin/sh
+[42527 ms] Start: Inspecting container
+[42528 ms] Start: Run: docker inspect --type container c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3
+[42669 ms] Start: Run in container: /bin/sh
+[42723 ms] New container started. Keep-alive process started.
+[42740 ms] Start: Run in container: uname -m
+[42860 ms] x86_64
+[42860 ms] 
+[42860 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[42864 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[42864 ms] 
+[42865 ms] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'vscode' || grep -E '^vscode|^[^:]*:[^:]*:vscode:' /etc/passwd || true)
+[42869 ms] safe.directory: Looking up root folder for workspace folder '/workspaces/Utah_BrainToText25'.
+[42870 ms] Start: Run in container: command -v git >/dev/null 2>&1 && ROOT_FOLDER="$(git -C '/workspaces/Utah_BrainToText25' rev-parse --show-toplevel)" && test "$(stat -c %u "$ROOT_FOLDER")" != "$(id -u)" && echo -n "$ROOT_FOLDER"
+[42878 ms] 
+[42878 ms] fatal: detected dubious ownership in repository at '/workspaces/Utah_BrainToText25'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory /workspaces/Utah_BrainToText25
+[42878 ms] Exit code 128
+[42878 ms] safe.directory: Checking host ownership of root folder '/workspaces/Utah_BrainToText25' at mount point '/workspaces/Utah_BrainToText25'.
+[42878 ms] Start: Run: powershell -NoProfile -NonInteractive -Command (Get-Acl .).Owner
+[43124 ms] DESKTOP-L31AAVK\Leonardo
+[43124 ms] 
+[43124 ms] Start: Run: powershell -NoProfile -NonInteractive -Command [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+[43354 ms] DESKTOP-L31AAVK\Leonardo
+[43354 ms] 
+[43354 ms] safe.directory: 'c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25' owned by 'DESKTOP-L31AAVK\Leonardo', current user is 'DESKTOP-L31AAVK\Leonardo'.
+[43355 ms] safe.directory: Root folder '/workspaces/Utah_BrainToText25' owned by current user on host but not owned by remote user in container. Adding to safe directory list in Git system config.
+[43355 ms] Start: Run in container: /bin/sh
+[43412 ms] Start: Run in container: git config --system --get-all safe.directory | grep -x '/workspaces/Utah_BrainToText25' || git config --system --add safe.directory '/workspaces/Utah_BrainToText25'
+[43536 ms] 
+[43537 ms] 
+[43537 ms] Start: Updating configuration state
+[43541 ms] Start: Setup shutdown monitor
+[43542 ms] Forking shutdown monitor: c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\shutdown\shutdownMonitorProcess \\.\pipe\vscode-remote-containers-2def2cd2-0da1-461d-b89f-f212d82aa166-sock singleContainer Debug c:\Users\Leonardo\AppData\Roaming\Code\logs\20250905T113608\window1\exthost\ms-vscode-remote.remote-containers 1757093850222
+[43556 ms] Start: Run in container: test -d '/home/vscode/.vscode-server'
+[43560 ms] 
+[43561 ms] 
+[43561 ms] Exit code 1
+[43561 ms] Start: Run in container: test -d '/home/vscode/.vscode-remote'
+[43567 ms] 
+[43567 ms] 
+[43567 ms] Exit code 1
+[43568 ms] Start: Run in container: test ! -f '/home/vscode/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/vscode/.vscode-server/data/Machine' && { > '/home/vscode/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[43578 ms] 
+[43578 ms] 
+[43578 ms] Start: Run in container: test -f '/home/vscode/.vscode-server/data/Machine/settings.json'
+[43581 ms] 
+[43582 ms] 
+[43582 ms] Exit code 1
+[43583 ms] Start: Run in container: which apt dpkg snap dnf yum rpm apk docker git gh kubectl podman curl wget ssh scp rsync gpg ps lsof netstat top tree find grep zip unzip tar gzip bzip2 xz || true
+[43601 ms] Start: Run in container: mkdir -p '/home/vscode/.vscode-server/data/Machine' && cat >'/home/vscode/.vscode-server/data/Machine/settings.json' <<'settingsJSON'
+[43609 ms] 
+[43609 ms] 
+[43609 ms] Start: Run in container: test ! -f '/home/vscode/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/vscode/.vscode-server/data/Machine' && { > '/home/vscode/.vscode-server/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[43612 ms] 
+[43613 ms] 
+[43613 ms] Start: Run in container: test -f '/home/vscode/.vscode-server/data/User/mcp.json'
+[43617 ms] 
+[43618 ms] 
+[43618 ms] Exit code 1
+[43618 ms] Start: Run in container: test -d '/home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755'
+[43622 ms] 
+[43622 ms] 
+[43622 ms] Exit code 1
+[43622 ms] Start: Run in container: test -d '/vscode/vscode-server/bin/linux-x64/6f17636121051a53c88d3e605c491d22af2ba755'
+[43625 ms] 
+[43625 ms] 
+[43625 ms] Start: Run in container: mkdir -p '/home/vscode/.vscode-server/bin' && ln -snf '/vscode/vscode-server/bin/linux-x64/6f17636121051a53c88d3e605c491d22af2ba755' '/home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755'
+[43631 ms] 
+[43632 ms] 
+[43632 ms] Start: Run in container: touch '/vscode/vscode-server/bin/linux-x64/6f17636121051a53c88d3e605c491d22af2ba755'
+[43632 ms] Start: Run in container: test -x '/home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/check-requirements.sh'
+[43634 ms] 
+[43635 ms] 
+[43635 ms] Start: Run in container: '/home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/check-requirements.sh'
+[43637 ms] 
+[43637 ms] 
+[43688 ms] 
+[43688 ms] 
+[43689 ms] Start: Launching Dev Containers helper.
+[43689 ms] ssh-agent: SSH_AUTH_SOCK not set on local host.
+[43690 ms] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock) forwarded to local host (\\.\pipe\openssh-ssh-agent).
+[43690 ms] X11 forwarding: DISPLAY not set on local host.
+[43690 ms] Start: Run in container: test -e /tmp/.X11-unix/X0
+[43694 ms] 
+[43694 ms] 
+[43694 ms] Exit code 1
+[43694 ms] Start: Run in container: mkdir -p '/tmp/.X11-unix'
+[43704 ms] 
+[43704 ms] 
+[43705 ms] X11 forwarding: DISPLAY in container (:0) forwarded to wsl host (:0).
+[43705 ms] Start: Run in container: gpgconf --list-dirs
+[43712 ms] sysconfdir:/etc/gnupg
+bindir:/usr/bin
+libexecdir:/usr/lib/gnupg
+libdir:/usr/lib/x86_64-linux-gnu/gnupg
+datadir:/usr/share/gnupg
+localedir:/usr/share/locale
+socketdir:/home/vscode/.gnupg
+dirmngr-socket:/home/vscode/.gnupg/S.dirmngr
+agent-ssh-socket:/home/vscode/.gnupg/S.gpg-agent.ssh
+agent-extra-socket:/home/vscode/.gnupg/S.gpg-agent.extra
+agent-browser-socket:/home/vscode/.gnupg/S.gpg-agent.browser
+agent-socket:/home/vscode/.gnupg/S.gpg-agent
+homedir:/home/vscode/.gnupg
+[43713 ms] 
+[43713 ms] Start: Run in container: ls '/home/vscode/.gnupg/private-keys-v1.d' 2>/dev/null
+[43721 ms] 
+[43721 ms] 
+[43721 ms] Exit code 2
+[43722 ms] Start: Run: gpgconf --list-dirs
+[43773 ms] gpg-agent: No agent-extra-socket found on local host.
+[43774 ms] Start: Run in Host: gpgconf --list-dirs
+[43780 ms] sysconfdir:/etc/gnupg
+bindir:/usr/bin
+libexecdir:/usr/lib/gnupg
+libdir:/usr/lib/x86_64-linux-gnu/gnupg
+datadir:/usr/share/gnupg
+localedir:/usr/share/locale
+socketdir:/run/user/1000/gnupg
+dirmngr-socket:/run/user/1000/gnupg/S.dirmngr
+keyboxd-socket:/run/user/1000/gnupg/S.keyboxd
+agent-ssh-socket:/run/user/1000/gnupg/S.gpg-agent.ssh
+agent-extra-socket:/run/user/1000/gnupg/S.gpg-agent.extra
+agent-browser-socket:/run/user/1000/gnupg/S.gpg-agent.browser
+agent-socket:/run/user/1000/gnupg/S.gpg-agent
+homedir:/home/default/.gnupg
+[43780 ms] 
+[43786 ms] Start: Run in container: test -f '/home/vscode/.gnupg/pubring.kbx'
+[43789 ms] 
+[43789 ms] 
+[43789 ms] Exit code 1
+[43790 ms] Start: Run in container: test -f '/home/vscode/.gnupg/pubring.gpg'
+[43792 ms] 
+[43792 ms] 
+[43792 ms] Exit code 1
+[43792 ms] Start: Run in container: test -f '/home/vscode/.gnupg/trustdb.gpg'
+[43794 ms] 
+[43794 ms] 
+[43794 ms] Exit code 1
+[43794 ms] Start: Run in container: mkdir -p -m 700 '/home/vscode/.gnupg'
+[43794 ms] gpg-agent: Socket in container (/home/vscode/.gnupg/S.gpg-agent) forwarded to wsl host (/run/user/1000/gnupg/S.gpg-agent.extra).
+[43798 ms] 
+[43798 ms] 
+[43798 ms] Start: Run in container: (command -v 'docker' || command -v 'oras' || command -v 'skopeo') >/dev/null 2>&1
+[43801 ms] 
+[43801 ms] 
+[43802 ms] Exit code 127
+[43802 ms] Start: Run in container: /bin/sh
+[43803 ms] userEnvProbe: loginInteractiveShell (default)
+[43803 ms] Start: Run in container: test -f '/tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135/env-loginInteractiveShell.json'
+[43806 ms] 
+[43806 ms] 
+[43806 ms] Exit code 1
+[43806 ms] Start: Run in container: # Test for /home/vscode/.ssh/known_hosts and ssh
+[43806 ms] userEnvProbe: not found in cache
+[43807 ms] userEnvProbe shell: /bin/bash
+[43810 ms] 
+[43810 ms] 
+[43810 ms] Start: Run in container: # Copy C:\Users\Leonardo\.ssh\known_hosts to /home/vscode/.ssh/known_hosts
+[43812 ms] Start: Run in Host: gpg-connect-agent updatestartuptty /bye
+[43816 ms] 
+[43817 ms] 
+[43817 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node /tmp/vscode-remote-containers-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.js git-credential-helper $*; }; f' || true
+[43822 ms] 
+[43822 ms] 
+[43823 ms] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[43860 ms] Start: Run in container: cat '/home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/product.json'
+[43864 ms] Start: Run in container: echo ~
+[43867 ms] Start: Run in container: cat '/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755' 2>/dev/null || (umask 377 && echo 'b9336a23-c2fa-4167-ba9a-6f1901b4e75c' >'/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755-0f099c99-07e2-48ad-aa97-f1f56c4dd786' && mv -n '/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755-0f099c99-07e2-48ad-aa97-f1f56c4dd786' '/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755' && rm -f '/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755-0f099c99-07e2-48ad-aa97-f1f56c4dd786' && cat '/home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755')
+[43876 ms] b9336a23-c2fa-4167-ba9a-6f1901b4e75c
+[43876 ms] 
+[43876 ms] Start: Starting VS Code Server
+[43876 ms] Start: Preparing Extensions
+[43877 ms] Start: Run in container: test ! -f '/home/vscode/.vscode-server/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/vscode/.vscode-server/data/Machine' && { > '/home/vscode/.vscode-server/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[43879 ms] 
+[43879 ms] 
+[43880 ms] Extensions cache, install extensions: None
+[43881 ms] Start: Run in container: test -d /home/vscode/.vscode-server/extensionsCache && ls /home/vscode/.vscode-server/extensionsCache || true
+[43884 ms] 
+[43884 ms] 
+[43884 ms] Start: Run in container: test -d /vscode/vscode-server/extensionsCache && ls /vscode/vscode-server/extensionsCache || true
+[43888 ms] 0b788a76-074f-4b72-a506-501e9145166a
+5aa31e0e-ffbe-4eb7-bac9-7332ebc19aef
+8f1ea8ef-cba9-491f-bfd6-413e998ea3a8
+dbaeumer.vscode-eslint-3.0.16
+de582907-9ab7-49b1-a644-19b2a371b52a
+github.copilot-1.317.0
+github.copilot-1.364.0
+github.copilot-chat-0.27.0
+llvm-vs-code-extensions.lldb-dap-0.2.13
+ms-python.autopep8-2025.2.0
+ms-python.debugpy-2025.10.0-linux-x64
+ms-python.python-2025.12.0-linux-x64
+ms-python.vscode-pylance-2025.7.1
+ms-python.vscode-python-envs-1.2.0-linux-x64
+swiftlang.swift-vscode-2.2.0
+[43888 ms] 
+[43888 ms] Extensions cache, link in container: None
+[43889 ms] Optimizing extensions for quality: stable
+[43889 ms] Start: Run in container: /home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/code-server --log debug --force-disable-user-env --server-data-dir /home/vscode/.vscode-server --use-host-proxy --telemetry-level all --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/vscode/.vscode-server/data/Machine/.connection-token-6f17636121051a53c88d3e605c491d22af2ba755 --extensions-download-dir /home/vscode/.vscode-server/extensionsCache --start-server --disable-websocket-compression --skip-requirements-check
+[43982 ms] /home/vscode
+[43983 ms] 
+[43983 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.js' >/tmp/vscode-remote-containers-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.js
+[43986 ms] 
+[43987 ms] 
+[43987 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.js' >/tmp/vscode-remote-containers-server-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.js_1757093894209
+[43992 ms] 
+[43992 ms] 
+[44185 ms] userEnvProbe PATHs:
+Probe:     '/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+Container: '/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+[44185 ms] Start: Run in container: mkdir -p '/tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135' && cat > '/tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135/env-loginInteractiveShell.json' << 'envJSON'
+[44190 ms] 
+[44190 ms] 
+[44241 ms] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[44250 ms] Server bound to 127.0.0.1:40221 (IPv4)
+Extension host agent listening on 40221
+
+[44251 ms] Start: Run in container: echo 40221 >'/home/vscode/.vscode-server/data/Machine/.devport-6f17636121051a53c88d3e605c491d22af2ba755'
+[44254 ms] 
+[44255 ms] 
+[44255 ms] Port forwarding for container port 40221 starts listening on local port.
+[44256 ms] Port forwarding local port 40221 to container port 40221
+[44257 ms] Running Dev Containers CLI:   run-user-commands --user-data-folder c:\Users\Leonardo\AppData\Roaming\Code\User\globalStorage\ms-vscode-remote.remote-containers\data --container-session-data-folder /tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 --workspace-folder c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --container-id c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3 --log-level debug --log-format json --config c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --prebuild false --stop-for-personalization true --remote-env REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env DISPLAY=:0 --remote-env REMOTE_CONTAINERS_DISPLAY_SOCK=/tmp/.X11-unix/X0 --remote-env REMOTE_CONTAINERS=true --mount-workspace-git-root --terminal-columns 150 --terminal-rows 33 --dotfiles-target-path ~/dotfiles
+[44257 ms] Start: Run: C:\Users\Leonardo\AppData\Local\Programs\Microsoft VS Code\Code.exe c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js run-user-commands --user-data-folder c:\Users\Leonardo\AppData\Roaming\Code\User\globalStorage\ms-vscode-remote.remote-containers\data --container-session-data-folder /tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 --workspace-folder c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --container-id c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3 --log-level debug --log-format json --config c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --prebuild false --stop-for-personalization true --remote-env REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env DISPLAY=:0 --remote-env REMOTE_CONTAINERS_DISPLAY_SOCK=/tmp/.X11-unix/X0 --remote-env REMOTE_CONTAINERS=true --mount-workspace-git-root --terminal-columns 150 --terminal-rows 33 --dotfiles-target-path ~/dotfiles
+[44263 ms] Initializing configuration support...
+[44264 ms] Internal initialization of dev container support package...
+[44281 ms] Port forwarding connection from 60790 > 40221 > 40221 in the container.
+[44281 ms] Start: Run in container: /home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node -e 
+[44314 ms] Ignoring option 'skip-requirements-check': not supported for server.
+[44324 ms] [17:38:14] 
+
+
+
+
+[44430 ms] [17:38:14] Extension host agent started.
+[44467 ms] [17:38:14] No extensions are marked as removed.
+[44469 ms] [17:38:14] Started initializing default profile extensions in extensions installation folder. file:///home/vscode/.vscode-server/extensions
+[44489 ms] [17:38:14] ComputeTargetPlatform: linux-x64
+[44494 ms] [17:38:14] Completed initializing default profile extensions in extensions installation folder. file:///home/vscode/.vscode-server/extensions
+[44505 ms] Port forwarding 60790 > 40221 > 40221 stderr: Connection established
+[44506 ms] @devcontainers/cli 0.79.0. Node.js v22.17.0. win32 10.0.19045 x64.
+[44506 ms] Start: Run: docker buildx version
+[44520 ms] Port forwarding connection from 60791 > 40221 > 40221 in the container.
+[44521 ms] Start: Run in container: /home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node -e 
+[44538 ms] [17:38:14] [127.0.0.1][6b4f3900][ManagementConnection] New connection established.
+[44575 ms] [17:38:14] Log level changed to info
+[44742 ms] github.com/docker/buildx v0.27.0-desktop.1 0ea7d3a2239bb57d1c598c691c5d00101ca936b7
+[44742 ms] 
+[44742 ms] Start: Run: docker -v
+[44744 ms] Port forwarding 60791 > 40221 > 40221 stderr: Connection established
+[44838 ms] [17:38:14] [127.0.0.1][75895838][ExtensionHostConnection] New connection established.
+[44843 ms] [17:38:14] [127.0.0.1][75895838][ExtensionHostConnection] <351> Launched Extension Host Process.
+[44862 ms] Start: Run: git rev-parse --show-cdup
+[44925 ms] Start: Run: docker inspect --type container c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3
+[45053 ms] Start: Inspecting container
+[45053 ms] Start: Run: docker inspect --type container c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3
+[45166 ms] Start: Run in container: /bin/sh
+[45215 ms] Start: Run in container: uname -m
+[45352 ms] x86_64
+[45353 ms] 
+[45353 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[45356 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[45356 ms] 
+[45356 ms] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'vscode' || grep -E '^vscode|^[^:]*:[^:]*:vscode:' /etc/passwd || true)
+[45359 ms] userEnvProbe: loginInteractiveShell (default)
+[45360 ms] Start: Run in container: test -f '/tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135/env-loginInteractiveShell.json'
+[45362 ms] 
+[45362 ms] 
+[45362 ms] Start: Run in container: mkdir -p '/home/vscode/.devcontainer' && CONTENT="$(cat '/home/vscode/.devcontainer/.onCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2025-09-05T17:38:10.859025026Z}" != '2025-09-05T17:38:10.859025026Z' ] && echo '2025-09-05T17:38:10.859025026Z' > '/home/vscode/.devcontainer/.onCreateCommandMarker'
+[45367 ms] 
+[45367 ms] 
+[45367 ms] Start: Run in container: cat '/tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135/env-loginInteractiveShell.json'
+[45371 ms] {
+        "PYTHON_SHA256": "c30bb24b7f1e9a19b11b55a546434f74e739bb4c271a3e3a80ff4380d49f7adb",
+        "HOSTNAME": "c48f2d9785b6",
+        "PYTHON_VERSION": "3.12.11",
+        "REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock",
+        "HOME": "/home/vscode",
+        "LANG": "C.UTF-8",
+        "LS_COLORS": "",
+        "GPG_KEY": "7169605F62C751356D054A26A821E680E5FA6305",
+        "REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock\",\"/tmp/.X11-unix/X0\",\"/home/vscode/.gnupg/S.gpg-agent\"]",
+        "SHLVL": "1",
+        "PATH": "/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "_": "/bin/cat"
+}
+[45371 ms] 
+[45371 ms] Start: Run in container: mkdir -p '/home/vscode/.devcontainer' && CONTENT="$(cat '/home/vscode/.devcontainer/.updateContentCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2025-09-05T17:38:10.859025026Z}" != '2025-09-05T17:38:10.859025026Z' ] && echo '2025-09-05T17:38:10.859025026Z' > '/home/vscode/.devcontainer/.updateContentCommandMarker'
+[45377 ms] 
+[45377 ms] 
+[45377 ms] Start: Run in container: mkdir -p '/home/vscode/.devcontainer' && CONTENT="$(cat '/home/vscode/.devcontainer/.postCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2025-09-05T17:38:10.859025026Z}" != '2025-09-05T17:38:10.859025026Z' ] && echo '2025-09-05T17:38:10.859025026Z' > '/home/vscode/.devcontainer/.postCreateCommandMarker'
+[45383 ms] 
+[45383 ms] 
+Running the postCreateCommand from Feature 'ghcr.io/devcontainers/features/git-lfs:1'...
+
+[45384 ms] Start: Run in container: /bin/sh -c /usr/local/share/pull-git-lfs-artifacts.sh
+Fetching git lfs artifacts...
+Updated Git hooks.
+Git LFS initialized.
+[47869 ms] [17:38:17] Downloaded extension to file:///home/vscode/.vscode-server/extensionsCache/051337aa-bf06-43c2-a3ba-5e0781470bd2
+[47909 ms] [17:38:18] Installing extension: github.copilot-chat {
+  isApplicationScoped: false,
+  profileLocation: _r {
+    scheme: 'file',
+    authority: '',
+    path: '/home/vscode/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/vscode/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/vscode/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-20T16:45:34.255Z' }
+}
+Running the postCreateCommand from devcontainer.json...
+
+[47926 ms] Start: Run in container: /bin/sh -c cd /workspace/phase1 && python -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt
+[48146 ms] [17:38:18] Getting Manifest... github.copilot
+[48252 ms] [17:38:18] Installing extension: github.copilot {
+  isApplicationScoped: false,
+  profileLocation: _r {
+    scheme: 'file',
+    authority: '',
+    path: '/home/vscode/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/vscode/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/vscode/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-20T16:45:34.255Z' },
+  pinned: false,
+  installGivenVersion: false,
+  context: { dependecyOrPackExtensionInstall: true }
+}
+[48693 ms] [17:38:18] Extracted extension to file:///home/vscode/.vscode-server/extensions/github.copilot-chat-0.30.3: github.copilot-chat
+[48706 ms] [17:38:18] Renamed to /home/vscode/.vscode-server/extensions/github.copilot-chat-0.30.3
+[48771 ms] [17:38:18] Downloaded extension to file:///home/vscode/.vscode-server/extensionsCache/f9ec2908-618b-4d5b-a7ec-dd1883909edd
+[48784 ms] [17:38:18] Installing extension: github.vscode-pull-request-github {
+  isApplicationScoped: false,
+  profileLocation: _r {
+    scheme: 'file',
+    authority: '',
+    path: '/home/vscode/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/vscode/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/vscode/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-20T16:45:34.255Z' }
+}
+[49651 ms] [17:38:19] Extracted extension to file:///home/vscode/.vscode-server/extensions/github.vscode-pull-request-github-0.116.2: github.vscode-pull-request-github
+[49673 ms] [17:38:19] Renamed to /home/vscode/.vscode-server/extensions/github.vscode-pull-request-github-0.116.2
+[49695 ms] [17:38:19] Extension installed successfully: github.vscode-pull-request-github file:///home/vscode/.vscode-server/extensions/extensions.json
+[50965 ms] [17:38:21] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 1309ms.
+[52032 ms] [17:38:22] Extracted extension to file:///home/vscode/.vscode-server/extensions/github.copilot-1.364.0: github.copilot
+[52051 ms] [17:38:22] Renamed to /home/vscode/.vscode-server/extensions/github.copilot-1.364.0
+[52069 ms] [17:38:22] Extension installed successfully: github.copilot-chat file:///home/vscode/.vscode-server/extensions/extensions.json
+[17:38:22] Extension installed successfully: github.copilot file:///home/vscode/.vscode-server/extensions/extensions.json
+[52178 ms] Port forwarding connection from 60821 > 40221 > 40221 in the container.
+[52178 ms] Start: Run in container: /home/vscode/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node -e 
+[52388 ms] Port forwarding 60821 > 40221 > 40221 stderr: Connection established
+/bin/sh: 1: source: not found
+[52626 ms] postCreateCommand from devcontainer.json failed with exit code 127. Skipping any further user-provided commands.
+[52628 ms] Error: Command failed: /bin/sh -c cd /workspace/phase1 && python -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt
+[52628 ms]     at E (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:235:157)
+[52628 ms]     at async Promise.allSettled (index 0)
+[52628 ms]     at async b9 (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:237:119)
+[52629 ms]     at async ND (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:226:4668)
+[52629 ms]     at async RD (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:226:4013)
+[52629 ms]     at async MD (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:226:3217)
+[52629 ms]     at async b7 (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:668:2746)
+[52629 ms]     at async N7 (c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:667:8546)
+[52629 ms]     at async c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js:484:1188
+[52655 ms] Exit code 1
+[52656 ms] Command failed: C:\Users\Leonardo\AppData\Local\Programs\Microsoft VS Code\Code.exe c:\Users\Leonardo\.vscode\extensions\ms-vscode-remote.remote-containers-0.422.1\dist\spec-node\devContainersSpecCLI.js run-user-commands --user-data-folder c:\Users\Leonardo\AppData\Roaming\Code\User\globalStorage\ms-vscode-remote.remote-containers\data --container-session-data-folder /tmp/devcontainers-86e479ec-b5d0-42a3-862d-c2d63526dd5c1757093849135 --workspace-folder c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.local_folder=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25 --id-label devcontainer.config_file=c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --container-id c48f2d9785b6ae52e244bce564a1973b30ed3c107bd40be1b441ef68d7e516f3 --log-level debug --log-format json --config c:\Users\Leonardo\Documents\ResearchCode\Utah_BrainToText25\.devcontainer\devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --prebuild false --stop-for-personalization true --remote-env REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-a6ca8917-c3b9-4f9b-9e25-68b2d5c79a0e.sock --remote-env DISPLAY=:0 --remote-env REMOTE_CONTAINERS_DISPLAY_SOCK=/tmp/.X11-unix/X0 --remote-env REMOTE_CONTAINERS=true --mount-workspace-git-root --terminal-columns 150 --terminal-rows 33 --dotfiles-target-path ~/dotfiles
+[52961 ms] [17:38:23] Downloaded extension to file:///home/vscode/.vscode-server/extensionsCache/b7106573-a22d-47ca-91bb-c510fa9a0fe4
+[52977 ms] [17:38:23] Installing extension: github.copilot {
+  isApplicationScoped: false,
+  profileLocation: _r {
+    scheme: 'file',
+    authority: '',
+    path: '/home/vscode/.vscode-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/vscode/.vscode-server/extensions/extensions.json',
+    _fsPath: '/home/vscode/.vscode-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.103.2', date: '2025-08-20T16:45:34.255Z' }
+}
+[53044 ms] [17:38:23] Deleted existing extension from disk github.copilot /home/vscode/.vscode-server/extensions/github.copilot-1.364.0
+[53767 ms] [17:38:23] Extracted extension to file:///home/vscode/.vscode-server/extensions/github.copilot-1.364.0: github.copilot
+[53776 ms] [17:38:23] Renamed to /home/vscode/.vscode-server/extensions/github.copilot-1.364.0
+[53798 ms] [17:38:23] Extension installed successfully: github.copilot file:///home/vscode/.vscode-server/extensions/extensions.json
+[58359 ms] Port forwarding 60821 > 40221 > 40221 stderr: Remote close
+[58399 ms] Port forwarding 60821 > 40221 > 40221 terminated with code 0 and signal null.

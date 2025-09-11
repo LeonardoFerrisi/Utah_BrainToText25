@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  brain-to-text:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utah-brain-to-text-phase1
+    volumes:
+      # Mount the entire project
+      - .:/workspace
+      # Mount for data persistence (if needed)
+      - brain-to-text-data:/workspace/phase1/nejm-brain-to-text/data
+      # Mount for models (if needed)
+      - brain-to-text-models:/workspace/phase1/nejm-brain-to-text/language_model/pretrained_language_models
+    working_dir: /workspace/phase1
+    environment:
+      - PYTHONPATH=/workspace/phase1:/workspace/phase1/nejm-brain-to-text
+      - VIRTUAL_ENV=/workspace/phase1/.b2txt2025_docker
+      - PATH=/workspace/phase1/.b2txt2025_docker/bin:$PATH
+    # Keep container running
+    tty: true
+    stdin_open: true
+    # Optional: expose ports if needed for Jupyter or other services
+    ports:
+      - "8888:8888"  # Jupyter
+      - "8080:8080"  # General web services
+    # Use init to handle signals properly
+    init: true
+
+  # Optional: separate service for Jupyter notebook
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utah-brain-to-text-jupyter
+    volumes:
+      - .:/workspace
+      - brain-to-text-data:/workspace/phase1/nejm-brain-to-text/data
+    working_dir: /workspace/phase1
+    environment:
+      - PYTHONPATH=/workspace/phase1:/workspace/phase1/nejm-brain-to-text
+      - VIRTUAL_ENV=/workspace/phase1/.b2txt2025_docker
+      - PATH=/workspace/phase1/.b2txt2025_docker/bin:$PATH
+    ports:
+      - "8889:8888"
+    command: >
+      bash -c "
+        source .b2txt2025_docker/bin/activate &&
+        jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --notebook-dir=/workspace/phase1
+      "
+    profiles:
+      - jupyter
+
+volumes:
+  brain-to-text-data:
+  brain-to-text-models:

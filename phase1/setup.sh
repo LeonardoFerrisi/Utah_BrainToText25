@@ -18,7 +18,7 @@ add-apt-repository -y ppa:deadsnakes/ppa
 apt update
 
 # Install Python 3.10
-apt install -y python3.10 python3.10-venv python3.10-dev python3-pip
+# apt install -y python3 python3-venv python3.10-dev python3-pip
 
 # Verify Python installation
 python --version
@@ -39,4 +39,4 @@ pip install -r requirements.txt
 deactivate
 
 # Print completion message
-echo "Setup complete. Python 3.10 and dependencies have been installed."
+echo "Setup complete. Python 3 and dependencies have been installed."
