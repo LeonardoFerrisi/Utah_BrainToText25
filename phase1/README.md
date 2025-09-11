@@ -5,6 +5,13 @@ NOTE:
     + I attempted to get this working on Docker, however I think this initial setup should be fine for the time being...
 + Make sure that you are in the **phase1** directory
     
+## Q&A
+
++ Why does this need to run on Linux?
+    + The baseline people designed their program to run using a `redis-server`
+    + This basically allows them to have mulitple programs running in the background
+    + There is a way to make a multiple processes, with inter-process communication on any platform, but that takes a lot of extra work...
+
 ## Setup (Windows)
 
 ### Installing Windows Subsystem for Linux (WSL)
@@ -26,7 +33,6 @@ Make sure you have the following installed:
 ```bash
 sudo setup.sh
 ```
-
 
 #### Troubleshooting
 

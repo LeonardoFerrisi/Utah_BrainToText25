@@ -19,8 +19,7 @@ See [Phase 1 README](./phase1/README.md)
 
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
     -   [ ] **Environment Setup**:
-        -   [x] Set up `b2txt25` (conda or python) environment for model training.
-        -   [ ] Set up `b2txt25_lm` (conda or python) environment for the language model.
+        -   [x] Set up `b2txt2025` (conda or python) environment for model training.
         -   [ ] Install all necessary dependencies, including Redis, CMake, and gcc.
     -   [ ] **Data Preparation**:
         -   [ ] Download the complete dataset from the provided Dryad link.
