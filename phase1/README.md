@@ -3,6 +3,7 @@
 NOTE:
 + This program has been designed to work on both Linux and Windows
     + I attempted to get this working on Docker, however I think this initial setup should be fine for the time being...
++ Make sure that you are in the **phase1** directory
     
 ## Setup (Windows)
 
@@ -18,8 +19,8 @@ Make sure you have the following installed:
 + VSCode
 
 #### Steps
-+ Activate WSL in a terminal using the following command: `wsl`
-+ Change directory to the current one the phase1 folder is located in. (Example: `usr/Documents/UTAH_BRAINTOTEXT25`)
++ Activate WSL in a *terminal* using the following command: `wsl`
++ Change directory to the current one the phase1 folder is located in. (Example: `usr/Documents/UTAH_BRAINTOTEXT25/phase1`)
 + Run the following command to finish setting up the dev environment:
 
 ```bash
@@ -61,10 +62,4 @@ The setup.sh file should now work when you run using
 
 ```bash
 sudo setup.sh
-```
-
-OR
-
-```bash
-sudo phase1/setup.sh
 ```

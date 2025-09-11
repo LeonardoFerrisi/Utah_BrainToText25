@@ -17,15 +17,25 @@ apt update && apt install -y software-properties-common
 add-apt-repository -y ppa:deadsnakes/ppa
 apt update
 
+echo "[Setup] Finished updating Linux packages"
+
+# Install git LFS
+apt-get install git-lfs
+
+echo "[Setup] Finished installing git-lfs"
+
 # Install Python 3.10
 # apt install -y python3 python3-venv python3.10-dev python3-pip
 
 # Verify Python installation
-python --version
+echo "[Setup] Getting Python Version"
+python3 --version
 
+echo "[Setup] Setting up Python environment"
 # Create a virtual environment
-python -m venv .b2txt2025
+python3 -m venv .b2txt2025
 
+echo "[Setup] Activating Python environment and installing dependencies"
 # Activate the virtual environment
 source .b2txt2025/bin/activate
 
@@ -35,6 +45,7 @@ pip install --upgrade pip
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
 
+echo "[Setup] Deactivating environment"
 # Deactivate the virtual environment
 deactivate
 
