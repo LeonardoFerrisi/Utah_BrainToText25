@@ -25,6 +25,7 @@ See [Phase 1 README](./phase1/README.md)
         -   [x] Download the complete dataset from the provided Dryad link.
         -   [x] Unzip and organize the data into the correct directory structure.
     -   [ ] **Model Training & Evaluation**:
+        -   [ ] Run Model training (phase1/2025_baseline_brain2speech/model_training/README.md)
         -   [ ] Train the baseline RNN model to achieve a phoneme error rate of approximately 10.1%.
         -   [ ] Run the full evaluation pipeline with the pretrained model to verify results.
 
