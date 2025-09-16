@@ -1,5 +1,0 @@
-[submodule "phase1/nejm-brain-to-text"]
-	path = phase1/nejm-brain-to-text
-	url = https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text.git
-	branch = main
-	ignore = dirty

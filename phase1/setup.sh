@@ -24,6 +24,7 @@ apt-get install git-lfs
 
 echo "[Setup] Finished installing git-lfs"
 
+git clone https://github.com/LeonardoFerrisi/2025_baseline_brain2speech.git
 # Install Python 3.10
 # apt install -y python3 python3-venv python3.10-dev python3-pip
 
