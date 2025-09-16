@@ -7,7 +7,7 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 
 ## Required Software
 
-- Docker [https://www.docker.com/products/docker-desktop/]()
+<!-- - Docker [https://www.docker.com/products/docker-desktop/]() -->
 - VSCode [https://code.visualstudio.com/]()
 - Git [https://git-scm.com/downloads]()
 
@@ -18,12 +18,12 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 See [Phase 1 README](./phase1/README.md)
 
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
-    -   [ ] **Environment Setup**:
+    -   [x] **Environment Setup**:
         -   [x] Set up `b2txt2025` (conda or python) environment for model training.
-        -   [ ] Install all necessary dependencies, including Redis, CMake, and gcc.
-    -   [ ] **Data Preparation**:
-        -   [ ] Download the complete dataset from the provided Dryad link.
-        -   [ ] Unzip and organize the data into the correct directory structure.
+        -   [x] Install all necessary dependencies, including Redis, CMake, and gcc.
+    -   [x] **Data Preparation**:
+        -   [x] Download the complete dataset from the provided Dryad link.
+        -   [x] Unzip and organize the data into the correct directory structure.
     -   [ ] **Model Training & Evaluation**:
         -   [ ] Train the baseline RNN model to achieve a phoneme error rate of approximately 10.1%.
         -   [ ] Run the full evaluation pipeline with the pretrained model to verify results.
