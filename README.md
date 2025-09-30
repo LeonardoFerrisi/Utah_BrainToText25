@@ -21,7 +21,7 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 2. In VSCode, install the **Dev Containers** extension
     + See [this guide](https://code.visualstudio.com/docs/getstarted/extensions) for details.
 3. Build a dev container using `CTRL+SHIFT+P` and search for the command `Dev Containers: Rebuild without Cache`
-4. A new window will open up, the dev container will begin installing. This may take a momement (pytorch is big)
+4. A new window will open up, the dev container will begin installing. This may take up to **20 minutes** of build time.
 5. You should be good to proceed to the setup instructions for Phase 1
 
 ## Roadmap
