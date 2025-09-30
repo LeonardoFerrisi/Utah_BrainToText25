@@ -33,12 +33,13 @@ echo "[Setup] Getting Python Version"
 python3 --version
 
 echo "[Setup] Setting up Python environment"
+
 # Create a virtual environment
-python3 -m venv .b2txt2025
+# python3 -m venv .b2txt2025
 
 echo "[Setup] Activating Python environment and installing dependencies"
 # Activate the virtual environment
-source .b2txt2025/bin/activate
+# source .b2txt2025/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip

@@ -10,6 +10,19 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
 <!-- - Docker [https://www.docker.com/products/docker-desktop/]() -->
 - VSCode [https://code.visualstudio.com/]()
 - Git [https://git-scm.com/downloads]()
+- Docker Desktop [https://www.docker.com/products/docker-desktop/]()
+
+### If on Windows:
+- [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+## Initial Setup
+ 
+1. Make sure you have Docker, VSCode, and Git installed.
+2. In VSCode, install the **Dev Containers** extension
+    + See [this guide](https://code.visualstudio.com/docs/getstarted/extensions) for details.
+3. Build a dev container using `CTRL+SHIFT+P` and search for the command `Dev Containers: Rebuild without Cache`
+4. A new window will open up, the dev container will begin installing. This may take a momement (pytorch is big)
+5. You should be good to proceed to the setup instructions for Phase 1
 
 ## Roadmap
 
