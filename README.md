@@ -32,11 +32,13 @@ See [Phase 1 README](./phase1/README.md)
 
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
     -   [x] **Environment Setup**:
-        -   [x] Set up `b2txt2025` (conda or python) environment for model training.
-        -   [x] Install all necessary dependencies, including Redis, CMake, and gcc.
+        -   [x] Set up `docker` environemnt for model training.
     -   [x] **Data Preparation**:
         -   [x] Download the complete dataset from the provided Dryad link.
         -   [x] Unzip and organize the data into the correct directory structure.
+    -   [ ] **Secure CHPC Access**:
+        -   [x] Acquired access through _1_ lab thus far
+        -   [ ] Demonstrate successful env setup on CHPC for model training
     -   [ ] **Model Training & Evaluation**:
         -   [ ] Run Model training (phase1/2025_baseline_brain2speech/model_training/README.md)
         -   [ ] Train the baseline RNN model to achieve a phoneme error rate of approximately 10.1%.
