@@ -1,9 +1,0 @@
-# ignore python bytecode files
-*.pyc
-*.egg-info
-
-# ignore rdb files
-*.rdb
-
-# ignore ds_store files
-.DS_Store

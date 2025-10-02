@@ -1,7 +1,8 @@
 # Ignore the dataset directory (replace 'data/' with your actual dataset folder name)
 data/
 dataset/
-# phase1/2025_baseline_brain2speech/data
+# phase1/.b2txt2025_linux/
+/data
 
 # Ignore git repository files
 .git/
