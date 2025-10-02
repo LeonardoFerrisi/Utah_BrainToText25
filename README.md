@@ -22,7 +22,17 @@ ALAN-D is based off of the baseline RNN speech decoding algorithm designed by UC
     + See [this guide](https://code.visualstudio.com/docs/getstarted/extensions) for details.
 3. Build a dev container using `CTRL+SHIFT+P` and search for the command `Dev Containers: Rebuild without Cache`
 4. A new window will open up, the dev container will begin installing. This may take up to **20 minutes** of build time.
-5. You should be good to proceed to the setup instructions for Phase 1
+5. Once the dev container has installed and opened, install the `nejm-brain-to-text` baseline as an editable python packge.
+
+```bash
+pip install -e phase1/nejm-brain-to-text
+```
+
+6. Install the data that is intended to be trained on or processed by `nejm-brain-to-text`.
+    + The easiest way to do this is to just download it from this google drive link (its roughly ~23 GB)
+    + Otherwise follow the instructions in `phase1/nejm-brain-to-text/README.md`
+        + The file `phase1/nejm-brain-to-text/download_data.py` also downloads it
+
 
 ## Roadmap
 

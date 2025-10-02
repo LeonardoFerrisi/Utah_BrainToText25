@@ -16,8 +16,6 @@ NOTE:
 
 See main README, follow instructions for opening up **Utah_Braintotext25** in a dev container in vs code.
 
-See 
-
 #### Troubleshooting
 
 If the dev container is struggling to run:
