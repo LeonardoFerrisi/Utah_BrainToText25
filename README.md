@@ -42,13 +42,13 @@ See [Phase 1 README](./phase1/README.md)
 
 -   [ ] **Replicate Baseline Results** (https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/tree/main)
     -   [x] **Environment Setup**:
-        -   [x] Set up `docker` environemnt for model training.
+        -   [x] Set up `docker` environemnt for model training. (only useful for Windows, CHPC is on Fedora linux)
     -   [x] **Data Preparation**:
         -   [x] Download the complete dataset from the provided Dryad link.
         -   [x] Unzip and organize the data into the correct directory structure.
     -   [ ] **Secure CHPC Access**:
         -   [x] Acquired access through _1_ lab thus far
-        -   [ ] Demonstrate successful env setup on CHPC for model training
+        -   [x] Demonstrate successful env setup on CHPC for model training
     -   [ ] **Model Training & Evaluation**:
         -   [ ] Run Model training (phase1/nejm-brain-to-text/model_training/README.md)
         -   [ ] Train the baseline RNN model to achieve a phoneme error rate of approximately 10.1%.
