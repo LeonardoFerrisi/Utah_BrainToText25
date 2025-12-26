@@ -1,0 +1,1262 @@
+{
+  "n_total_trials": 1718,
+  "n_trials_with_errors": 1263,
+  "substitution_counts": {
+    "D->T": 107,
+    "T->D": 94,
+    "S->Z": 68,
+    "IH->AH": 64,
+    "Z->S": 60,
+    "IH->EH": 51,
+    "EH->IH": 50,
+    "AE->EH": 39,
+    "G->K": 38,
+    "IY->IH": 38,
+    "AH->IH": 35,
+    "ER->AH": 35,
+    "EH->AE": 31,
+    "AH->AA": 28,
+    "N->D": 28,
+    "P->B": 27,
+    "AA->AH": 27,
+    "B->P": 25,
+    "K->G": 25,
+    "IH->IY": 24,
+    "N->T": 24,
+    "AO->AA": 22,
+    "IH->EY": 22,
+    "F->V": 21,
+    "OW->AA": 21,
+    "AE->AH": 21,
+    "SH->S": 21,
+    "OW->AH": 20,
+    "EY->EH": 20,
+    "AH->ER": 20,
+    "D->N": 20,
+    "EH->EY": 20,
+    "EY->IH": 19,
+    "AH->EH": 19,
+    "T->N": 19,
+    "V->F": 19,
+    "M->V": 18,
+    "K->N": 17,
+    "EH->AH": 17,
+    "IY->AH": 17,
+    "AA->AE": 16,
+    "S->N": 15,
+    "EY->AE": 14,
+    "AY->AA": 14,
+    "DH->TH": 14,
+    "EY->IY": 14,
+    "AY->AH": 14,
+    "L->R": 14,
+    "N->AH": 14,
+    "K->T": 14,
+    "T->S": 13,
+    "N->K": 13,
+    "S->T": 13,
+    "AY->AE": 12,
+    "UW->IH": 12,
+    "AA->AO": 12,
+    "M->B": 12,
+    "IH->N": 12,
+    "AH->N": 12,
+    "W->R": 12,
+    "UW->OW": 11,
+    "AH->AE": 11,
+    "R->W": 11,
+    "AE->IH": 11,
+    "AO->AH": 11,
+    "ER->OW": 11,
+    "OW->ER": 10,
+    "AE->AA": 10,
+    "N->EY": 10,
+    "IH->AE": 10,
+    "AE->EY": 10,
+    "S->SH": 10,
+    "AH->IY": 9,
+    "B->M": 9,
+    "EH->IY": 9,
+    "T->K": 9,
+    "IY->EY": 9,
+    "N->R": 9,
+    "Z->N": 9,
+    "N->L": 9,
+    "S->K": 9,
+    "K->NG": 9,
+    "R->L": 9,
+    "R->ER": 9,
+    "UH->AH": 9,
+    "L->ER": 8,
+    "IY->NG": 8,
+    "JH->Z": 8,
+    "L->N": 8,
+    "AE->AY": 8,
+    "CH->SH": 8,
+    "ER->IH": 8,
+    "N->EH": 8,
+    "ER->AA": 8,
+    "N->S": 8,
+    "AW->AE": 8,
+    "ER->R": 7,
+    "R->N": 7,
+    "AY->IH": 7,
+    "M->N": 7,
+    "M->P": 7,
+    "AA->EH": 7,
+    "N->M": 7,
+    "G->T": 7,
+    "OW->L": 7,
+    "AY->EH": 7,
+    "T->Z": 7,
+    "CH->S": 7,
+    "K->AH": 7,
+    "S->CH": 7,
+    "NG->IY": 7,
+    "JH->D": 6,
+    "NG->K": 6,
+    "AO->AY": 6,
+    "AW->OW": 6,
+    "D->JH": 6,
+    "AH->OW": 6,
+    "OW->N": 6,
+    "UW->AH": 6,
+    "EH->AY": 6,
+    "EY->N": 6,
+    "T->AH": 6,
+    "JH->S": 6,
+    "UW->IY": 6,
+    "EH->AA": 6,
+    "M->F": 6,
+    "AO->ER": 6,
+    "T->JH": 6,
+    "AH->EY": 6,
+    "N->G": 6,
+    "R->AH": 6,
+    "ER->IY": 5,
+    "L->AE": 5,
+    "JH->CH": 5,
+    "N->AA": 5,
+    "AH->AO": 5,
+    "NG->G": 5,
+    "N->IH": 5,
+    "UW->ER": 5,
+    "F->P": 5,
+    "AH->AY": 5,
+    "K->AE": 5,
+    "V->M": 5,
+    "IY->EH": 5,
+    "G->S": 5,
+    "G->D": 5,
+    "T->P": 5,
+    "D->Z": 5,
+    "ER->EY": 5,
+    "AE->N": 5,
+    "HH->K": 5,
+    "ER->L": 5,
+    "N->Z": 5,
+    "T->G": 4,
+    "N->IY": 4,
+    "D->S": 4,
+    "IH->UW": 4,
+    "AH->UH": 4,
+    "JH->ZH": 4,
+    "OW->UH": 4,
+    "AO->OW": 4,
+    "OW->EH": 4,
+    "OW->UW": 4,
+    "ER->N": 4,
+    "AH->T": 4,
+    "AY->N": 4,
+    "UH->IH": 4,
+    "AO->IH": 4,
+    "K->IY": 4,
+    "CH->JH": 4,
+    "R->OY": 4,
+    "S->D": 4,
+    "G->NG": 4,
+    "T->M": 4,
+    "R->T": 4,
+    "S->AH": 4,
+    "F->M": 4,
+    "V->N": 4,
+    "ZH->Z": 4,
+    "CH->T": 4,
+    "HH->IH": 4,
+    "ER->EH": 4,
+    "UW->N": 4,
+    "AE->OW": 3,
+    "D->IY": 3,
+    "N->SH": 3,
+    "AA->UH": 3,
+    "Z->ZH": 3,
+    "S->L": 3,
+    "R->AW": 3,
+    "AO->UH": 3,
+    "AA->L": 3,
+    "EH->OW": 3,
+    "AH->R": 3,
+    "K->IH": 3,
+    "D->G": 3,
+    "EH->AW": 3,
+    "IH->AY": 3,
+    "HH->EH": 3,
+    "R->M": 3,
+    "AH->AW": 3,
+    "R->D": 3,
+    "M->L": 3,
+    "ER->UW": 3,
+    "L->AH": 3,
+    "EY->AH": 3,
+    "D->IH": 3,
+    "R->Y": 3,
+    "JH->T": 3,
+    "G->R": 3,
+    "AH->Z": 3,
+    "R->V": 3,
+    "AE->L": 3,
+    "K->EH": 3,
+    "JH->N": 3,
+    "K->P": 3,
+    "P->AH": 3,
+    "P->N": 3,
+    "AA->N": 3,
+    "R->S": 3,
+    "NG->EY": 3,
+    "OW->EY": 3,
+    "UW->EH": 3,
+    "SH->JH": 3,
+    "AY->OY": 3,
+    "T->CH": 3,
+    "IY->UW": 3,
+    "ZH->JH": 3,
+    "D->AH": 3,
+    "N->AE": 3,
+    "IH->AA": 3,
+    "R->AA": 3,
+    "HH->AH": 3,
+    "N->ER": 3,
+    "P->M": 3,
+    "G->N": 3,
+    "M->R": 3,
+    "IH->K": 3,
+    "EY->ER": 3,
+    "AO->EH": 3,
+    "ER->Z": 2,
+    "IH->AO": 2,
+    "AA->OY": 2,
+    "R->JH": 2,
+    "OW->AO": 2,
+    "IH->OW": 2,
+    "L->AO": 2,
+    "L->K": 2,
+    "AY->AW": 2,
+    "TH->K": 2,
+    "L->IH": 2,
+    "L->M": 2,
+    "P->S": 2,
+    "NG->N": 2,
+    "K->D": 2,
+    "F->N": 2,
+    "EH->ER": 2,
+    "EY->UW": 2,
+    "F->S": 2,
+    "IH->SH": 2,
+    "K->AA": 2,
+    "K->AY": 2,
+    "AY->IY": 2,
+    "OW->NG": 2,
+    "OW->T": 2,
+    "ER->AY": 2,
+    "N->V": 2,
+    "AY->AO": 2,
+    "DH->IH": 2,
+    "EH->N": 2,
+    "Z->OW": 2,
+    "W->K": 2,
+    "AH->NG": 2,
+    "V->IY": 2,
+    "M->AH": 2,
+    "M->AA": 2,
+    "M->EY": 2,
+    "K->R": 2,
+    "M->IH": 2,
+    "K->SH": 2,
+    "S->DH": 2,
+    "T->EH": 2,
+    "SH->CH": 2,
+    "EH->K": 2,
+    "L->D": 2,
+    "Z->D": 2,
+    "IY->ZH": 2,
+    "AO->T": 2,
+    "OW->IH": 2,
+    "R->IY": 2,
+    "V->Z": 2,
+    "V->S": 2,
+    "T->SH": 2,
+    "R->EH": 2,
+    "AE->K": 2,
+    "R->UW": 2,
+    "P->CH": 2,
+    "AY->EY": 2,
+    "R->AY": 2,
+    "Y->D": 2,
+    "R->P": 2,
+    "S->TH": 2,
+    "DH->Z": 2,
+    "T->B": 2,
+    "ER->M": 2,
+    "UH->AO": 2,
+    "N->Y": 2,
+    "AW->R": 2,
+    "N->JH": 2,
+    "AW->AH": 2,
+    "EH->R": 2,
+    "ER->K": 2,
+    "TH->S": 2,
+    "TH->DH": 2,
+    "N->DH": 2,
+    "Z->K": 2,
+    "M->S": 2,
+    "ER->UH": 2,
+    "K->AO": 2,
+    "UH->N": 2,
+    "L->T": 2,
+    "L->UW": 2,
+    "K->OW": 2,
+    "K->EY": 2,
+    "R->B": 2,
+    "F->ER": 2,
+    "R->EY": 2,
+    "EH->T": 2,
+    "IH->T": 2,
+    "IH->M": 2,
+    "UH->EH": 2,
+    "W->F": 2,
+    "K->S": 2,
+    "P->L": 2,
+    "AH->UW": 2,
+    "HH->T": 2,
+    "AA->AY": 2,
+    "Z->AH": 2,
+    "UW->OY": 2,
+    "EH->M": 2,
+    "OW->R": 2,
+    "B->T": 2,
+    "Y->R": 2,
+    "AH->M": 2,
+    "G->IY": 2,
+    "JH->SH": 2,
+    "P->F": 2,
+    "T->V": 2,
+    "Z->T": 2,
+    "R->G": 2,
+    "N->AY": 2,
+    "V->L": 2,
+    "P->ER": 2,
+    "D->EH": 2,
+    "B->EH": 2,
+    "ER->P": 2,
+    "OY->AO": 2,
+    "T->IH": 2,
+    "AW->AY": 2,
+    "IY->OW": 2,
+    "EY->M": 2,
+    "R->IH": 2,
+    "G->AY": 2,
+    "S->M": 2,
+    "ER->AO": 2,
+    "F->L": 2,
+    "W->M": 2,
+    "IY->N": 2,
+    "ER->AE": 2,
+    "EY->AY": 2,
+    "S->JH": 2,
+    "AA->HH": 2,
+    "V->P": 2,
+    "OY->AY": 2,
+    "T->AY": 1,
+    "L->OY": 1,
+    "OY->L": 1,
+    "T->AO": 1,
+    "G->Y": 1,
+    "CH->AH": 1,
+    "T->TH": 1,
+    "N->UW": 1,
+    "AO->UW": 1,
+    "TH->T": 1,
+    "AE->M": 1,
+    "L->DH": 1,
+    "IY->Z": 1,
+    "V->R": 1,
+    "B->S": 1,
+    "B->N": 1,
+    "SH->EH": 1,
+    "HH->AW": 1,
+    "AW->W": 1,
+    "Y->K": 1,
+    "CH->Z": 1,
+    "IY->ER": 1,
+    "OW->AW": 1,
+    "IH->G": 1,
+    "OW->M": 1,
+    "Z->JH": 1,
+    "L->OW": 1,
+    "HH->NG": 1,
+    "EY->CH": 1,
+    "HH->V": 1,
+    "EH->G": 1,
+    "K->JH": 1,
+    "AH->D": 1,
+    "ZH->R": 1,
+    "D->M": 1,
+    "V->AW": 1,
+    "DH->K": 1,
+    "D->ER": 1,
+    "AH->L": 1,
+    "AA->CH": 1,
+    "S->ZH": 1,
+    "G->IH": 1,
+    "UW->V": 1,
+    "SH->Z": 1,
+    "EH->D": 1,
+    "AW->AA": 1,
+    "OW->G": 1,
+    "IH->CH": 1,
+    "K->ER": 1,
+    "EH->AO": 1,
+    "IY->G": 1,
+    "IY->M": 1,
+    "AH->G": 1,
+    "CH->ER": 1,
+    "ER->Y": 1,
+    "IY->D": 1,
+    "AW->HH": 1,
+    "T->AW": 1,
+    "AA->S": 1,
+    "ZH->SH": 1,
+    "AW->N": 1,
+    "W->N": 1,
+    "NG->T": 1,
+    "AO->R": 1,
+    "T->NG": 1,
+    "Z->IH": 1,
+    "AY->L": 1,
+    "OW->F": 1,
+    "K->Y": 1,
+    "W->L": 1,
+    "EH->UW": 1,
+    "EH->V": 1,
+    "Y->IH": 1,
+    "UW->M": 1,
+    "Y->N": 1,
+    "UW->ZH": 1,
+    "SH->N": 1,
+    "P->IY": 1,
+    "IH->B": 1,
+    "D->L": 1,
+    "K->CH": 1,
+    "TH->L": 1,
+    "R->OW": 1,
+    "AY->D": 1,
+    "OW->K": 1,
+    "ER->TH": 1,
+    "Y->EH": 1,
+    "UW->R": 1,
+    "T->ER": 1,
+    "P->K": 1,
+    "L->AA": 1,
+    "P->T": 1,
+    "G->EH": 1,
+    "OY->AH": 1,
+    "UH->OW": 1,
+    "Z->AY": 1,
+    "AA->B": 1,
+    "AW->EH": 1,
+    "DH->IY": 1,
+    "ER->D": 1,
+    "ZH->S": 1,
+    "NG->R": 1,
+    "G->AA": 1,
+    "Z->SH": 1,
+    "F->R": 1,
+    "T->HH": 1,
+    "Y->IY": 1,
+    "NG->OY": 1,
+    "B->R": 1,
+    "W->ZH": 1,
+    "F->G": 1,
+    "AE->AW": 1,
+    "W->P": 1,
+    "K->OY": 1,
+    "ER->T": 1,
+    "N->W": 1,
+    "ER->V": 1,
+    "T->EY": 1,
+    "W->B": 1,
+    "N->AO": 1,
+    "HH->S": 1,
+    "L->AY": 1,
+    "B->D": 1,
+    "L->F": 1,
+    "P->AE": 1,
+    "V->W": 1,
+    "OY->AA": 1,
+    "AO->P": 1,
+    "UW->EY": 1,
+    "Z->V": 1,
+    "G->OW": 1,
+    "ER->OY": 1,
+    "AY->HH": 1,
+    "AY->UW": 1,
+    "Y->G": 1,
+    "R->AO": 1,
+    "ER->SH": 1,
+    "EY->S": 1,
+    "SH->T": 1,
+    "AO->OY": 1,
+    "CH->EH": 1,
+    "S->IH": 1,
+    "AO->N": 1,
+    "UH->R": 1,
+    "EY->NG": 1,
+    "AH->K": 1,
+    "AY->K": 1,
+    "AA->EY": 1,
+    "UW->W": 1,
+    "Y->DH": 1,
+    "ER->JH": 1,
+    "AH->P": 1,
+    "AA->D": 1,
+    "K->F": 1,
+    "W->AH": 1,
+    "AH->W": 1,
+    "D->W": 1,
+    "CH->P": 1,
+    "AA->AW": 1,
+    "AE->P": 1,
+    "Y->AH": 1,
+    "UW->NG": 1,
+    "IH->S": 1,
+    "N->ZH": 1,
+    "IY->S": 1,
+    "F->K": 1,
+    "B->L": 1,
+    "EY->OW": 1,
+    "Y->V": 1,
+    "R->F": 1,
+    "UH->ER": 1,
+    "L->NG": 1,
+    "EY->K": 1,
+    "IY->T": 1,
+    "T->AA": 1,
+    "AA->M": 1,
+    "AW->AO": 1,
+    "G->L": 1,
+    "V->B": 1,
+    "L->G": 1,
+    "IH->D": 1,
+    "B->OW": 1,
+    "P->V": 1,
+    "K->HH": 1,
+    "T->UW": 1,
+    "Y->S": 1,
+    "AH->S": 1,
+    "W->T": 1,
+    "AO->AW": 1,
+    "AE->AO": 1,
+    "SH->F": 1,
+    "IH->OY": 1,
+    "HH->AA": 1,
+    "AA->R": 1,
+    "Y->TH": 1,
+    "DH->NG": 1,
+    "S->P": 1,
+    "P->OY": 1,
+    "Z->UW": 1,
+    "AW->L": 1,
+    "V->T": 1,
+    "EY->B": 1,
+    "NG->AH": 1,
+    "Z->DH": 1,
+    "AH->F": 1,
+    "F->AY": 1,
+    "OW->OY": 1,
+    "TH->IY": 1,
+    "R->DH": 1,
+    "L->AW": 1,
+    "ER->NG": 1,
+    "IH->Y": 1,
+    "OW->V": 1,
+    "UW->UH": 1,
+    "AY->ER": 1,
+    "AH->V": 1,
+    "IY->AE": 1,
+    "AH->CH": 1,
+    "AA->G": 1,
+    "AA->OW": 1,
+    "ZH->CH": 1,
+    "IH->P": 1,
+    "UH->IY": 1,
+    "S->AA": 1,
+    "S->HH": 1,
+    "N->OW": 1,
+    "CH->AA": 1,
+    "JH->IH": 1,
+    "OW->B": 1,
+    "EY->SH": 1,
+    "T->IY": 1,
+    "IY->R": 1,
+    "EH->S": 1,
+    "AW->S": 1,
+    "M->W": 1,
+    "S->AE": 1,
+    "AW->EY": 1,
+    "S->V": 1,
+    "EY->R": 1,
+    "K->L": 1,
+    "AA->ER": 1,
+    "V->Y": 1,
+    "HH->L": 1,
+    "IH->ER": 1,
+    "NG->AO": 1,
+    "P->D": 1,
+    "AW->M": 1,
+    "UH->G": 1,
+    "Z->EH": 1,
+    "Z->M": 1,
+    "AO->Z": 1,
+    "L->P": 1,
+    "B->UH": 1,
+    "D->B": 1,
+    "L->V": 1,
+    "D->AA": 1,
+    "B->AA": 1,
+    "EH->Y": 1,
+    "M->ER": 1,
+    "IY->Y": 1,
+    "AA->F": 1,
+    "R->AE": 1,
+    "F->AH": 1,
+    "ER->HH": 1,
+    "TH->IH": 1,
+    "W->G": 1,
+    "EY->L": 1,
+    "ZH->V": 1
+  },
+  "top_substitutions": [
+    [
+      [
+        "D",
+        "T"
+      ],
+      107
+    ],
+    [
+      [
+        "T",
+        "D"
+      ],
+      94
+    ],
+    [
+      [
+        "S",
+        "Z"
+      ],
+      68
+    ],
+    [
+      [
+        "IH",
+        "AH"
+      ],
+      64
+    ],
+    [
+      [
+        "Z",
+        "S"
+      ],
+      60
+    ],
+    [
+      [
+        "IH",
+        "EH"
+      ],
+      51
+    ],
+    [
+      [
+        "EH",
+        "IH"
+      ],
+      50
+    ],
+    [
+      [
+        "AE",
+        "EH"
+      ],
+      39
+    ],
+    [
+      [
+        "G",
+        "K"
+      ],
+      38
+    ],
+    [
+      [
+        "IY",
+        "IH"
+      ],
+      38
+    ],
+    [
+      [
+        "AH",
+        "IH"
+      ],
+      35
+    ],
+    [
+      [
+        "ER",
+        "AH"
+      ],
+      35
+    ],
+    [
+      [
+        "EH",
+        "AE"
+      ],
+      31
+    ],
+    [
+      [
+        "AH",
+        "AA"
+      ],
+      28
+    ],
+    [
+      [
+        "N",
+        "D"
+      ],
+      28
+    ],
+    [
+      [
+        "P",
+        "B"
+      ],
+      27
+    ],
+    [
+      [
+        "AA",
+        "AH"
+      ],
+      27
+    ],
+    [
+      [
+        "B",
+        "P"
+      ],
+      25
+    ],
+    [
+      [
+        "K",
+        "G"
+      ],
+      25
+    ],
+    [
+      [
+        "IH",
+        "IY"
+      ],
+      24
+    ],
+    [
+      [
+        "N",
+        "T"
+      ],
+      24
+    ],
+    [
+      [
+        "AO",
+        "AA"
+      ],
+      22
+    ],
+    [
+      [
+        "IH",
+        "EY"
+      ],
+      22
+    ],
+    [
+      [
+        "F",
+        "V"
+      ],
+      21
+    ],
+    [
+      [
+        "OW",
+        "AA"
+      ],
+      21
+    ],
+    [
+      [
+        "AE",
+        "AH"
+      ],
+      21
+    ],
+    [
+      [
+        "SH",
+        "S"
+      ],
+      21
+    ],
+    [
+      [
+        "OW",
+        "AH"
+      ],
+      20
+    ],
+    [
+      [
+        "EY",
+        "EH"
+      ],
+      20
+    ],
+    [
+      [
+        "AH",
+        "ER"
+      ],
+      20
+    ],
+    [
+      [
+        "D",
+        "N"
+      ],
+      20
+    ],
+    [
+      [
+        "EH",
+        "EY"
+      ],
+      20
+    ],
+    [
+      [
+        "EY",
+        "IH"
+      ],
+      19
+    ],
+    [
+      [
+        "AH",
+        "EH"
+      ],
+      19
+    ],
+    [
+      [
+        "T",
+        "N"
+      ],
+      19
+    ],
+    [
+      [
+        "V",
+        "F"
+      ],
+      19
+    ],
+    [
+      [
+        "M",
+        "V"
+      ],
+      18
+    ],
+    [
+      [
+        "K",
+        "N"
+      ],
+      17
+    ],
+    [
+      [
+        "EH",
+        "AH"
+      ],
+      17
+    ],
+    [
+      [
+        "IY",
+        "AH"
+      ],
+      17
+    ],
+    [
+      [
+        "AA",
+        "AE"
+      ],
+      16
+    ],
+    [
+      [
+        "S",
+        "N"
+      ],
+      15
+    ],
+    [
+      [
+        "EY",
+        "AE"
+      ],
+      14
+    ],
+    [
+      [
+        "AY",
+        "AA"
+      ],
+      14
+    ],
+    [
+      [
+        "DH",
+        "TH"
+      ],
+      14
+    ],
+    [
+      [
+        "EY",
+        "IY"
+      ],
+      14
+    ],
+    [
+      [
+        "AY",
+        "AH"
+      ],
+      14
+    ],
+    [
+      [
+        "L",
+        "R"
+      ],
+      14
+    ],
+    [
+      [
+        "N",
+        "AH"
+      ],
+      14
+    ],
+    [
+      [
+        "K",
+        "T"
+      ],
+      14
+    ]
+  ],
+  "sample_trials_preview": [
+    {
+      "cue": "vision is one of the foundational blocks for any entrepreneur",
+      "decoded": "vision is one of the foundational plans for any entrepreneur",
+      "substitutions": [
+        [
+          "AW",
+          "AH"
+        ],
+        [
+          "D",
+          "IH"
+        ],
+        [
+          "EY",
+          "N"
+        ],
+        [
+          "AH",
+          "IH"
+        ],
+        [
+          "B",
+          "P"
+        ]
+      ]
+    },
+    {
+      "cue": "member of the american meteorological society",
+      "decoded": "member of the american medical logical society",
+      "substitutions": [
+        [
+          "M",
+          "EY"
+        ],
+        [
+          "T",
+          "D"
+        ],
+        [
+          "IY",
+          "M"
+        ],
+        [
+          "AO",
+          "IH"
+        ],
+        [
+          "R",
+          "D"
+        ]
+      ]
+    },
+    {
+      "cue": "they are migrant hispanic farm workers",
+      "decoded": "they are program expanding farm workers",
+      "substitutions": [
+        [
+          "M",
+          "R"
+        ],
+        [
+          "AY",
+          "AA"
+        ],
+        [
+          "N",
+          "EH"
+        ],
+        [
+          "T",
+          "K"
+        ],
+        [
+          "HH",
+          "IH"
+        ]
+      ]
+    },
+    {
+      "cue": "they encouraged people to use credit cards",
+      "decoded": "they enticed people to use their credit cards",
+      "substitutions": [
+        [
+          "EH",
+          "IH"
+        ],
+        [
+          "K",
+          "OY"
+        ],
+        [
+          "IH",
+          "AH"
+        ],
+        [
+          "JH",
+          "S"
+        ],
+        [
+          "D",
+          "T"
+        ]
+      ]
+    },
+    {
+      "cue": "manatees are often fatally injured in collisions with boats",
+      "decoded": "manatees are often fatally injured in collisions with boats",
+      "substitutions": [
+        [
+          "AE",
+          "AH"
+        ],
+        [
+          "AO",
+          "AA"
+        ],
+        [
+          "EY",
+          "IH"
+        ],
+        [
+          "T",
+          "N"
+        ],
+        [
+          "IH",
+          "EH"
+        ]
+      ]
+    },
+    {
+      "cue": "twelve men tried and true",
+      "decoded": "blue moon rise is too",
+      "substitutions": [
+        [
+          "W",
+          "L"
+        ],
+        [
+          "EH",
+          "UW"
+        ],
+        [
+          "V",
+          "Z"
+        ],
+        [
+          "AY",
+          "N"
+        ],
+        [
+          "AH",
+          "Z"
+        ]
+      ]
+    },
+    {
+      "cue": "there is a long way between now and that point",
+      "decoded": "the is a long way between now and that point",
+      "substitutions": [
+        [
+          "R",
+          "EY"
+        ],
+        [
+          "T",
+          "EY"
+        ],
+        [
+          "W",
+          "B"
+        ],
+        [
+          "N",
+          "T"
+        ],
+        [
+          "D",
+          "T"
+        ]
+      ]
+    },
+    {
+      "cue": "including rural districts",
+      "decoded": "allowing rural districts",
+      "substitutions": [
+        [
+          "K",
+          "EH"
+        ],
+        [
+          "UW",
+          "OY"
+        ],
+        [
+          "D",
+          "N"
+        ],
+        [
+          "AH",
+          "IY"
+        ],
+        [
+          "S",
+          "L"
+        ]
+      ]
+    },
+    {
+      "cue": "conveyed something of the confusion uncertainty and rebellion of youth",
+      "decoded": "conveyed something of the confusion uncertainty and rebellion of youth",
+      "substitutions": [
+        [
+          "N",
+          "M"
+        ],
+        [
+          "V",
+          "IY"
+        ],
+        [
+          "EY",
+          "N"
+        ],
+        [
+          "UW",
+          "IH"
+        ],
+        [
+          "S",
+          "D"
+        ]
+      ]
+    },
+    {
+      "cue": "i was at one of the big hospitals in new york",
+      "decoded": "i was at one of the big exercise in new york",
+      "substitutions": [
+        [
+          "N",
+          "T"
+        ],
+        [
+          "B",
+          "P"
+        ],
+        [
+          "G",
+          "K"
+        ],
+        [
+          "HH",
+          "EH"
+        ],
+        [
+          "AA",
+          "L"
+        ]
+      ]
+    }
+  ]
+}
