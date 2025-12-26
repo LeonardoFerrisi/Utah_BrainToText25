@@ -1,8 +1,8 @@
 """
 Multi-Pronunciation Lexicon for Brain-to-Text Training
 
-This module provides functionality to generate multiple valid phoneme sequences
-for a given sentence, accounting for dialect variations like the cot-caught merger.
+Generates multiple valid phoneme sequences for a given sentence,
+accounting for dialect variations like the cot-caught merger.
 
 Author: Generated for Utah Brain-to-Text project
 """
@@ -32,41 +32,36 @@ PHONE_TO_IDX = {phone: idx for idx, phone in enumerate(LOGIT_PHONE_DEF)}
 
 class DialectVariants:
     """
-    Defines phoneme equivalence classes for common dialect variations.
+    Defines phoneme equivalence classes for valid dialect variations.
     
-    These are phoneme pairs that may be interchangeable for a given speaker,
-    meaning either pronunciation should be considered correct.
+    Only includes mergers that represent valid English pronunciations,
+    not decoding errors.
     """
     
-    # Common American English dialect mergers
     MERGERS = {
         # Cot-caught merger (Western/Canadian American English)
-        'COT_CAUGHT': [('AA', 'AO')],
-        
-        # Pin-pen merger (Southern American English)  
-        'PIN_PEN': [('IH', 'EH')],  # before nasals
-        
-        # Mary-merry-marry merger
-        'MARY_MERRY_MARRY': [('EH', 'AE'), ('EH', 'EY')],
-        
-        # Weak vowel merger (unstressed vowels)
-        'WEAK_VOWEL': [('AH', 'IH'), ('AH', 'AX')],
-        
-        # Common voicing confusions (often articulatory, not dialect)
-        'VOICING': [
-            ('T', 'D'),
-            ('P', 'B'),
-            ('K', 'G'),
-            ('S', 'Z'),
-            ('F', 'V'),
+        # "caught" and "cot" are pronounced the same
+        # ~34 errors in dataset
+        'COT_CAUGHT': [
+            ('AA', 'AO'),
         ],
         
-        # Rhotic variations
-        'RHOTIC': [('ER', 'AH')],
+        # Additional valid mergers (commented out - enable if needed)
+        # These have more limited validity or context-dependence
+        
+        # # Pin-pen merger (Southern US) - only valid before nasals
+        # 'PIN_PEN': [
+        #     ('IH', 'EH'),
+        # ],
+        
+        # # Non-rhotic dialects (rare in American English)
+        # 'RHOTIC': [
+        #     ('ER', 'AH'),
+        # ],
     }
     
-    # Default set of mergers to use
-    DEFAULT_MERGERS = ['COT_CAUGHT', 'WEAK_VOWEL']
+    # Default: only linguistically valid mergers
+    DEFAULT_MERGERS = ['COT_CAUGHT']
     
     @classmethod
     def get_equivalence_pairs(cls, merger_names: Optional[List[str]] = None) -> List[Tuple[str, str]]:
@@ -111,12 +106,12 @@ class MultiPronunciationLexicon:
     
     def __init__(self, 
                  merger_names: Optional[List[str]] = None,
-                 max_variants_per_sentence: int = 16,
+                 max_variants_per_sentence: int = 4,
                  g2p_instance: Optional[G2p] = None):
         """
         Args:
-            merger_names: List of dialect mergers to consider (see DialectVariants.MERGERS)
-            max_variants_per_sentence: Maximum number of pronunciation variants to generate
+            merger_names: List of dialect mergers to consider
+            max_variants_per_sentence: Maximum number of pronunciation variants
             g2p_instance: Optional pre-initialized G2p instance
         """
         self.merger_names = merger_names or DialectVariants.DEFAULT_MERGERS
@@ -134,12 +129,7 @@ class MultiPronunciationLexicon:
         return sentence
     
     def sentence_to_phonemes(self, sentence: str) -> Tuple[List[str], str]:
-        """
-        Convert sentence to canonical phoneme sequence.
-        
-        Returns:
-            Tuple of (phoneme_list, cleaned_sentence)
-        """
+        """Convert sentence to canonical phoneme sequence."""
         sentence = self.remove_punctuation(sentence)
         
         phonemes = []
@@ -160,15 +150,6 @@ class MultiPronunciationLexicon:
     def generate_variants(self, phonemes: List[str]) -> List[List[str]]:
         """
         Generate all valid pronunciation variants for a phoneme sequence.
-        
-        Uses the equivalence map to find positions where phonemes can vary,
-        then generates the Cartesian product of all possibilities.
-        
-        Args:
-            phonemes: Canonical phoneme sequence
-            
-        Returns:
-            List of valid phoneme sequences (including the original)
         """
         # Find positions with alternatives
         alternatives_per_position = []
@@ -181,7 +162,7 @@ class MultiPronunciationLexicon:
         for alts in alternatives_per_position:
             n_combinations *= len(alts)
         
-        # If too many combinations, use sampling strategy
+        # If too many combinations, use sampling
         if n_combinations > self.max_variants:
             return self._sample_variants(phonemes, alternatives_per_position)
         
@@ -195,24 +176,16 @@ class MultiPronunciationLexicon:
     def _sample_variants(self, 
                          phonemes: List[str], 
                          alternatives: List[List[str]]) -> List[List[str]]:
-        """
-        Sample a subset of variants when there are too many combinations.
-        
-        Strategy: Always include the canonical pronunciation, then randomly
-        sample from the space of variants.
-        """
+        """Sample variants when there are too many combinations."""
         variants = [phonemes.copy()]  # Always include original
         
-        # Find positions with multiple options
         variable_positions = [i for i, alts in enumerate(alternatives) if len(alts) > 1]
         
-        # Random sampling
-        np.random.seed(42)  # For reproducibility
+        np.random.seed(42)
         for _ in range(self.max_variants - 1):
             variant = phonemes.copy()
-            # Randomly flip some variable positions
             for pos in variable_positions:
-                if np.random.random() < 0.5:  # 50% chance to use alternative
+                if np.random.random() < 0.5:
                     alts = alternatives[pos]
                     variant[pos] = alts[np.random.randint(len(alts))]
             
@@ -225,15 +198,8 @@ class MultiPronunciationLexicon:
         """
         Get all pronunciation variants for a sentence.
         
-        Args:
-            sentence: Input sentence
-            
         Returns:
-            Dict containing:
-                - 'sentence': cleaned sentence
-                - 'canonical': canonical phoneme sequence
-                - 'variants': list of all valid phoneme sequences
-                - 'variant_ids': list of phoneme sequences as integer IDs
+            Dict with 'canonical', 'variants', 'variant_ids', 'n_variants'
         """
         phonemes, cleaned = self.sentence_to_phonemes(sentence)
         variants = self.generate_variants(phonemes)
@@ -261,26 +227,3 @@ def phonemes_to_ids(phonemes: List[str]) -> List[int]:
 def ids_to_phonemes(ids: List[int]) -> List[str]:
     """Convert integer IDs back to phonemes."""
     return [LOGIT_PHONE_DEF[i] for i in ids]
-
-
-# Example usage and testing
-if __name__ == "__main__":
-    lexicon = MultiPronunciationLexicon(
-        merger_names=['COT_CAUGHT', 'WEAK_VOWEL', 'VOICING']
-    )
-    
-    test_sentences = [
-        "caught the ball",
-        "cot in the corner", 
-        "the cat sat on the mat",
-        "water bottle"
-    ]
-    
-    for sentence in test_sentences:
-        result = lexicon.get_sentence_variants(sentence)
-        print(f"\nSentence: '{result['sentence']}'")
-        print(f"Canonical: {' '.join(result['canonical'])}")
-        print(f"Number of variants: {result['n_variants']}")
-        if result['n_variants'] <= 4:
-            for i, var in enumerate(result['variants']):
-                print(f"  Variant {i+1}: {' '.join(var)}")
