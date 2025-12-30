@@ -129,15 +129,13 @@ class MultiRefBrainToTextTrainer:
         
         # Initialize model
         self.model = GRUDecoder(
-            n_input_features=self.args['model']['n_input_features'],
-            n_output_features=self.args['dataset']['n_classes'],
-            n_days=len(self.args['dataset']['sessions']),
-            n_layers=self.args['model']['n_layers'],
+            neural_dim=self.args['model']['n_input_features'],
             n_units=self.args['model']['n_units'],
-            dropout=self.args['model']['rnn_dropout'],
-            input_network_n_layers=self.args['model']['input_network']['n_input_layers'],
-            input_network_layer_sizes=self.args['model']['input_network']['input_layer_sizes'],
-            input_network_dropout=self.args['model']['input_network']['input_layer_dropout'],
+            n_days=len(self.args['dataset']['sessions']),
+            n_classes=self.args['dataset']['n_classes'],
+            rnn_dropout=self.args['model']['rnn_dropout'],
+            input_dropout=self.args['model']['input_network']['input_layer_dropout'],
+            n_layers=self.args['model']['n_layers'],
             patch_size=self.args['model']['patch_size'],
             patch_stride=self.args['model']['patch_stride'],
         )

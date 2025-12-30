@@ -1,1 +1,8 @@
 2025-12-30 19:58:37,743 - INFO - Using CPU
+2025-12-30 20:33:20,974 - INFO - Using CPU
+2025-12-30 20:38:07,712 - INFO - Using CPU
+2025-12-30 20:39:14,361 - INFO - Using CPU
+2025-12-30 20:39:28,160 - INFO - Model initialized with 44,315,177 parameters
+2025-12-30 20:39:34,793 - INFO - Multi-reference enabled with mergers: ['COT_CAUGHT']
+2025-12-30 20:39:35,979 - INFO - Initialization complete
+2025-12-30 20:39:35,980 - INFO - Starting training...
