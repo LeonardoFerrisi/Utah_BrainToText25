@@ -103,15 +103,27 @@ class MultiRefBrainToTextTrainer:
     
     def initialize(self):
         """Initialize model, datasets, optimizer, and loss functions."""
-        
+    
+        # Build file paths from data directory and sessions (matching rnn_trainer.py)
+        train_file_paths = [os.path.join(self.args['dataset']['dataset_dir'], s, 'data_train.hdf5') 
+                            for s in self.args['dataset']['sessions']]
+        val_file_paths = [os.path.join(self.args['dataset']['dataset_dir'], s, 'data_val.hdf5') 
+                          for s in self.args['dataset']['sessions']]
+    
         # Get train/val splits
-        train_trials, val_trials = train_test_split_indicies(
-            data_dir=self.args['dataset']['dataset_dir'],
-            sessions=self.args['dataset']['sessions'],
-            test_percentage=self.args['dataset']['test_percentage'],
-            seed=self.args['dataset']['seed']
+        train_trials, _ = train_test_split_indicies(
+            file_paths=train_file_paths,
+            test_percentage=0,
+            seed=self.args['dataset']['seed'],
+            bad_trials_dict=self.args['dataset'].get('bad_trials_dict')
         )
-        
+    
+        _, val_trials = train_test_split_indicies(
+            file_paths=val_file_paths,
+            test_percentage=1,
+            seed=self.args['dataset']['seed'],
+            bad_trials_dict=self.args['dataset'].get('bad_trials_dict')
+        )
         # Feature subset
         feature_subset = self.args['dataset'].get('feature_subset')
         
